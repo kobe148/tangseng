@@ -5,9 +5,6 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/sirupsen/logrus"
-	"google.golang.org/grpc"
-
 	"github.com/CocaineCong/tangseng/app/search_engine/analyzer"
 	"github.com/CocaineCong/tangseng/app/search_engine/repository/storage"
 	"github.com/CocaineCong/tangseng/app/search_engine/rpc"
@@ -17,6 +14,8 @@ import (
 	pb "github.com/CocaineCong/tangseng/idl/pb/search_engine"
 	"github.com/CocaineCong/tangseng/loading"
 	"github.com/CocaineCong/tangseng/pkg/discovery"
+	"github.com/sirupsen/logrus"
+	"google.golang.org/grpc"
 )
 
 func main() {
